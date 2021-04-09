@@ -1,0 +1,24 @@
+{
+  "name": "ecs-tonminter",
+  "version": "1.0.0",
+  "description": "TonMinter smart contracts for ECS IoT Cookstoves",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creol-io/ECS-TonMinter.git"
+  },
+  "keywords": [
+    "Ethereum",
+    "Solidity",
+    "IoT"
+  ],
+  "author": "Joshua Bijak",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/creol-io/ECS-TonMinter/issues"
+  },
+  "homepage": "https://github.com/creol-io/ECS-TonMinter#readme"
+}
