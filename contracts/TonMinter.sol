@@ -33,7 +33,7 @@ Description: Contract that accepts signed proofs of a IoT Cookstove and mints an
               |_|                       
 
 */
-pragma solidity ^0.8.0;
+pragma solidity ^0.6.2;
 
 
 import "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/IERC721.sol";
@@ -43,10 +43,8 @@ import "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/IERC721E
 import "@openzeppelin/contracts-ethereum-package/contracts/introspection/IERC165.sol";
 
 
-import "@openzeppelin/contracts-ethereum-package/contracts/ownership/Ownable.sol";
+import "@openzeppelin/contracts-ethereum-package/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol";
-
-import "@openzeppelin/upgrades/contracts/Initializable.sol";
 
 import "./CarbonVCUInterface.sol";
 /*
@@ -65,7 +63,7 @@ import "./CarbonVCUInterface.sol";
  * @notice Prototype Contract that accepts signed proofs of a IoT Cookstove and mints an NFT ton when it hits 1000kg
  * 
  */
-contract TonMinter is Initializable, Ownable {
+contract TonMinter is Initializable, OwnableUpgradeSafe {
     
     /**
      * 

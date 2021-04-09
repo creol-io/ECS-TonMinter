@@ -13,20 +13,10 @@
  */
 require('dotenv').config()
 
-const HDWalletProvider = require("truffle-hdwallet-provider");
+const HDWalletProvider = require("@truffle/hdwallet-provider");
 
 const { projectId, mnemonic,mnemonicLedger, mnemonicGanache } = require('./secrets.json');
 
-//const LedgerProvider = require("truffle-ledger-provider");
-const LedgerOptions = {
-  networkId: "4",
-  path: "44'/60'/0'/0",
-  askConfirm: true,
-  accountsLength: 10,
-  accountsOffset: 0// ledger default derivation path
-}
-const babelRegister = require('babel-register');
-const babelPolyfill = require('babel-polyfill');
 
 // Infura API key
 const infura_apikey_dev = projectId;
@@ -39,11 +29,11 @@ const mnemonic_prod = mnemonic;
 module.exports = {
   compilers:{
 		solc:{
-			version: "0.5.16",
+			version: "0.6.2",
 			settings:{
 				optimizer:{
 					enabled: true,
-					runs: 1000,
+					runs: 200,
 				},
 			},
 		},
