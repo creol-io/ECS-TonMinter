@@ -1,5 +1,5 @@
 
-pragma solidity ^0.6.2;
+pragma solidity ^0.8.0;
 /**
  * 
  * 
@@ -43,4 +43,5 @@ pragma solidity ^0.6.2;
 
 interface CarbonVCUInterface {
     function gettokenIDtoSubtokenAddress(uint256 _VCUID) external view returns(address _subtokenAddress);
+    function mintVCU(address _forOwner, string calldata _tokenMetadata) external;
 }

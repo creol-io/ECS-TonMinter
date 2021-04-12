@@ -23,8 +23,7 @@
   "homepage": "https://github.com/creol-io/ECS-TonMinter#readme",
   "dependencies": {
     "@openzeppelin/cli": "^2.8.2",
-    "@openzeppelin/contracts-ethereum-package": "^3.0.0",
-    "@openzeppelin/upgrades": "^2.8.0",
+    "@openzeppelin/contracts-upgradeable": "^4.0.0",
     "@truffle/hdwallet-provider": "^1.2.6",
     "dotenv": "^8.2.0"
   }
