@@ -2,3 +2,9 @@
 secrets.json
 
 node_modules/
+
+artifacts/
+
+package-lock.json
+
+TonMinter_flat.sol
