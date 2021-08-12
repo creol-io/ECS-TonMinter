@@ -98,7 +98,7 @@ contract TonMinter is Initializable, OwnableUpgradeable {
     address public creolSuper;
     address public CVCUAddress;
 
-    string public cookstoveIPFSURI ="testURI.com";
+    string public cookstoveIPFSURI;
 
     CarbonVCUInterface public CVCUInterface;
 

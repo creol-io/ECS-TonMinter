@@ -21,7 +21,7 @@ module.exports = {
     },
     maticMumbai: {
       provider: () => new HDWalletProvider(
-        mnemonic, 'https://rpc-mumbai.matic.today'
+        mnemonic, 'https://polygon-mumbai.infura.io/v3/0f83eb63faea409abc1f440c9f077646'
         , 0, 10),
       networkId: 80001,
       gasPrice: 1e9,

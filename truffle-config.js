@@ -11,7 +11,6 @@
  *     gasPrice: 10000000000,
  *   },
  */
-require('dotenv').config()
 
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 
